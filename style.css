@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+:root {
+  --primary-color: #96efff;
+  --font-color: #fff;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #5fbdff, var(--primary-color));
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 75vmin;
+  height: 75vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5vmin;
+}
+
+.button-option {
+  background-color: var(--font-color);
+  width: 23vmin;
+  height: 23vmin;
+  border: none;
+  border-radius: 10px;
+  font-size: 12vmin;
+  color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.restart {
+  display: block;
+  font-size: 1.3em;
+  margin: 1.5rem auto 0;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  color: var(--font-color);
+  background-color: #0a0027;
+  cursor: pointer;
+  position: relative;
+}
+
+.popup {
+  background: linear-gradient(135deg, #5fbdff, var(--primary-color));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12vmin;
+  gap: 2vmin;
+  padding-inline: 0.3em;
+}
+
+.popup.hide {
+  display: none;
+}
+
+.new-game {
+  background-color: #0a0027;
+  color: var(--font-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+}
+
+.message {
+  color: var(--font-color);
+  font-size: 1em;
+  text-align: center;
+}
